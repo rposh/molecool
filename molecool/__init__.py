@@ -4,7 +4,10 @@ A Python package for analyzing and visualizing xyz files.
 """
 
 # Add imports here
-from .functions import *
+from .functions import canvas
+from .measure import calculate_distance, calculate_angle
+from .visualize import draw_molecule, bond_histogram
+from .molecule import build_bond_list
 
 # Handle versioneer
 from ._version import get_versions
